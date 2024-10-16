@@ -1,0 +1,75 @@
+.leagues-page {
+    font-family: Play, sans-serif;
+  }
+  
+  .banner-image {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .next-image {
+    width: 90%;
+    padding-left: 120px;
+    overflow: hidden;
+  }
+  
+  .banner-image img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .flex-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .options-container {
+    width: 40%; /* Left side width */
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .options-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .league-option {
+    margin-bottom: 20px;
+  }
+  
+  .league-option h3 {
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .league-option p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .league-option button {
+    padding: 10px 15px;
+    background-color: #ff0000; /* Bootstrap primary color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .league-option button:hover {
+    background-color: #b30000; 
+  }
+  
+  .image-container { 
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .image-placeholder {
+    padding-bottom: 10px;
+  }
+  

@@ -1,0 +1,38 @@
+.myteam-page ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .myteam-page li {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px 0;
+    font-size: 26px;
+  }
+  
+  .myteam-page button {
+    padding: 5px 10px;
+    background-color: #C00000;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .myteam-page button:hover {
+    background-color: #a80000;
+  }
+
+  .submit {
+    font-size: 30px;
+    font-family: Play, sans-serif;
+    border-radius: 5px;
+  }
+
+  .myteam-page {
+    padding: 20px;
+  }
+
+  h3 {
+    font-size: 35px;
+  }
