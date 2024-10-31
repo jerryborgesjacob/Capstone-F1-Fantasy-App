@@ -1,4 +1,3 @@
-// models/League.js
 const mongoose = require('mongoose');
 
 const leagueSchema = new mongoose.Schema({

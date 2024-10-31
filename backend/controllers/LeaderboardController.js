@@ -3,7 +3,7 @@ const League = require('../models/League');
 async function getLeaderboard(req, res) {
   try {
 
-    const leagueId = req.params.leagueId; // Assuming leagueId is passed as a URL parameter
+    const leagueId = req.params.leagueId; 
     const league = await League.findById(leagueId);
 
     if (!league) {

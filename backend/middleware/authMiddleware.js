@@ -1,6 +1,5 @@
 const jwt = require('jsonwebtoken');
 
-// Middleware to check if the user is authenticated
 const isAuthenticated = (req, res, next) => {
     const token = req.headers['authorization'];
     if (!token) {
@@ -19,7 +18,7 @@ const isAuthenticated = (req, res, next) => {
 // Middleware to check if the user is an admin
 const isAdmin = (req, res, next) => {
     if (req.user.role !== 'admin') {
-        return res.status(403).json({ message: 'Access denied: Admins only' });
+        return res.status(403).json({ message: 'Access denied' });
     }
     next();
 };

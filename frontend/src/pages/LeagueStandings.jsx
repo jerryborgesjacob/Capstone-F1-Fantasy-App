@@ -7,7 +7,7 @@ const LeagueStandings = () => {
   useEffect(() => {
     async function fetchStandings() {
       const response = await axios.post('/api/leagues/update-points');
-      setStandings(response.data); // Assuming data includes updated league standings
+      setStandings(response.data); 
     }
     fetchStandings();
   }, []);

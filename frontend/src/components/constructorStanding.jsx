@@ -4,7 +4,7 @@ import axios from 'axios';
 const ConstructorStandings = () => {
   const [constructorStandings, setConstructorStandings] = useState([]);
 
-  // Fetch the current season's constructor standings from the Ergast API
+  // Fetch the current season constructor standings from API
   useEffect(() => {
     const fetchConstructorStandings = async () => {
       try {

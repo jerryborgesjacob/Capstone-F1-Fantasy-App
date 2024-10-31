@@ -72,20 +72,5 @@ export default MyTeam;
 
     
 
-    {/* <div className="container">
-             
-             <div className="content">
-                 <div className="matches">
-                     <Matches />
-                 </div>
-                 <div className="teams">
-                     <Teams />
-                 </div>
-                 <div className="players">
-                     <Players />
-                </div>
-                
-            </div>
-      </div> */}
-   
+
 

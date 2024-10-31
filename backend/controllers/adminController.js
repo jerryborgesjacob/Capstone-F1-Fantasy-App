@@ -1,4 +1,3 @@
-// controllers/adminController.js
 const Team = require('../models/Team');
 const League = require('../models/League');
 
