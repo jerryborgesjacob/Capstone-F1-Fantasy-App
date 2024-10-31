@@ -28,6 +28,36 @@ db.once('open', () => {
     console.log('Connected to MongoDB');
 });
 
+const leagueSchema = new mongoose.Schema({
+    leagueName: String,
+    leagueType: String,
+    numPlayers: Number,
+  });
+  
+  const League = mongoose.model('League', leagueSchema);
+  
+  // Route to create a new league
+  app.post('/api/leagues', async (req, res) => {
+    const { leagueName, leagueType, numPlayers } = req.body;
+  
+    if (!leagueName || !leagueType || !numPlayers) {
+      return res.status(400).json({ message: 'All fields are required' });
+    }
+  
+    try {
+      const newLeague = new League({
+        leagueName,
+        leagueType,
+        numPlayers,
+      });
+  
+      await newLeague.save();
+      res.status(201).json({ message: 'League created successfully!' });
+    } catch (error) {
+      res.status(500).json({ message: 'Error creating league' });
+    }
+  });
+
 app.use('/', routes);
 
 app.listen(PORT, () => {

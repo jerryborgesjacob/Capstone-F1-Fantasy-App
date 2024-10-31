@@ -7,6 +7,7 @@ import HowToPlay from './pages/HowToPlay';
 import Account from './pages/Account';
 import RaceData from './pages/RaceData';
 import Footer from './components/Footer';
+import AdminDashboard from './pages/AdminDashboard';
 import './App.css';
 
 const App = () => {
@@ -21,6 +22,7 @@ const App = () => {
           <Route path="/howtoplay" element={<HowToPlay />} />
           <Route path="/account" element={<Account />} />
           <Route path="/racedata" element={<RaceData />} />
+          <Route path="/admin-dashboard" element={<AdminDashboard />} />
         </Routes>
         <Footer />
       </div>
