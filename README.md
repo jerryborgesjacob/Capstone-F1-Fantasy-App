@@ -11,5 +11,6 @@ This repository contains F1 Fantasy League Web Application created as part of a 
 ### NOTES:
 - Login and Admin panels were removed due to error in code. The deployed website is barebone. The code for the intended functions are in the repository. I am actively working on getting the application to work as intended with all the features.
 - The some Fantasy League features and leaderboard are being worked on and will be added soon.
+- Some API features are working in local, but isn't working on the deployed site. This is being worked on.
 
 
